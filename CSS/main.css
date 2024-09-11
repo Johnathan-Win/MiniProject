@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdf;
+    box-sizing: border-box; /* รวม padding และ border */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+/* Style for the top navigation bar */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for navigation links */
+.topnav a, .topnav .dropbtn {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover state for links */
+.topnav a:hover, .topnav .dropbtn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active state for links */
+.topnav a.active, .topnav .dropbtn.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position dropdown content below the button */
+    left: 0;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Hover state for dropdown links */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown button active state */
+.dropdown:hover .dropbtn, .dropdown .dropbtn.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Adjustments for active class */
+a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav .dropbtn {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+.footer-content{
+	text-align: center
+}
